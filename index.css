@@ -1,0 +1,285 @@
+/* Fonte */
+@font-face {
+  font-family: 'markProRegular';
+  src: url('./fontes/mark-pro-regular.woff');
+}
+@font-face {
+  font-family: 'markProBold';
+  src: url('./fontes/mark-pro-bold.woff');
+}
+/* Body */
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #E7E9F5;
+}
+h1,h2,h3,h4,h5,h6,p,button,input,img {
+  margin: 0;
+  padding: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+/* Quadro */
+div.quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  padding: 50px 50px 50px 50px;
+  margin: 50px 100px 50px 50px;
+  z-index: 10;
+}
+div.quadro h3 {
+  font-family: 'markProRegular';
+  font-size: 15px;
+  letter-spacing: 10px;
+  color: #24262D;
+}
+div.quadro h2 {
+  font-family: 'markProBold';
+  font-size: 25px;
+  color: #24262D;
+  text-align: center;
+}
+div.quadro p {
+  font-family: 'markProRegular';
+  font-size: 18px;
+  color: #FE1F2D;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+div.quadro p span {
+  font-family: 'markProBold';
+}
+div.quadro h4 {
+  font-family: 'markProBold';
+  font-size: 18px;
+  color: #18AF78;
+  border-bottom: 3px solid #18AF78;
+  margin: 0 0 20px 0;
+}
+div.quadro form {
+  width: 100%;
+}
+div.quadro label {
+  font-family: 'markProBold';
+  font-size: 14px;
+  width: 100%;
+}
+div.quadro div.campo {
+  position: relative;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+div.quadro div.campo img {
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  pointer-events: none;
+}
+div.quadro input {
+  font-family: 'markProRegular';
+  font-size: 16px;
+  color: #24262D;
+  background-color: #E7E9F5;
+  padding: 20px 20px 20px 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+div.quadro input::placeholder {
+  color: #c0c3d0;
+  opacity: 1;
+}
+div.quadro input:focus {
+  border: none;
+  outline: none;
+}
+div.quadro input.botao,
+div.quadro input.botao::placeholder,
+div.quadro input.botao:focus {
+  font-family: 'markProBold';
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #18AF78;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  opacity: 1;
+  transition: all 0.3s;
+}
+div.quadro input.botao:hover {
+  opacity: 0.7;
+}
+/* Fundo */
+div.fundo {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+div.fundo div.divisor {
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  background-color: #2E3247;
+  transform: rotate(-10deg);
+  height: 60vh;
+  width: 150%;
+  z-index: 2;
+}
+div.fundo img.pneu {
+  position: absolute;
+  width: 100%;
+  max-width: 1300px;
+  top: -100px;
+  left: -100px;
+  animation: rodandoPneu 5s linear infinite;
+  z-index: 1;
+}
+@keyframes rodandoPneu {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+div.fundo img.carroUm {
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  animation: carroMexendo 10s linear infinite;
+  opacity: 0;
+  animation-delay: 1s;
+}
+div.fundo img.carroDois {
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  animation: carroMexendo 10s linear infinite;
+  opacity: 0;
+  animation-delay: 2s;
+}
+div.fundo img.carroTres {
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  animation: carroMexendo 10s linear infinite;
+  opacity: 0;
+}
+@keyframes carroMexendo {
+  0% {
+    left: -5%;
+    opacity: 0;
+  }
+  5% {
+    left: 0%;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+div.fundo img.widnei {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  bottom: 0;
+  left: 20%;
+  z-index: 5;
+}
+div.fundo img.veneto {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  bottom: 0;
+  left: 35%;
+  z-index: 4;
+}
+div.fundo img.vagnao {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  bottom: 0;
+  z-index: 3;
+}
+/* RESPONSIVO */
+@media screen and (max-width: 1000px) {
+  body {
+    align-items: flex-start;
+  }
+  div.quadro {
+    padding: 40px 30px 40px 30px;
+    margin: 50px 20px 50px 20px;
+  }
+  div.fundo {
+    min-height: 130vh;
+  }
+  div.fundo div.divisor {
+    bottom: -100px;
+    left: -100px;
+    height: 80vh;
+    width: 200%;
+  }
+  div.fundo img.pneu {
+    width: 150%;
+    top: -200px;
+    left: -50px;
+  }
+  div.fundo img.carroUm {
+    animation-delay: 2s;
+  }
+  div.fundo img.carroDois {
+    animation-delay: 4s;
+  }
+  @keyframes carroMexendo {
+    0% {
+      left: -10%;
+      opacity: 0;
+    }
+    5% {
+      left: 0%;
+      opacity: 1;
+    }
+    100% {
+      left: 110%;
+      opacity: 1;
+    }
+  }
+  div.fundo img.widnei {
+    max-width: 350px;
+    left: 10%;
+  }
+  div.fundo img.veneto {
+    max-width: 350px;
+    left: 45%;
+  }
+  div.fundo img.vagnao {
+    max-width: 350px;
+    left: -20%;
+  }
+}
