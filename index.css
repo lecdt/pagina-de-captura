@@ -258,10 +258,10 @@ div.fundo img.vagnao {
     left: -50px;
   }
   div.fundo img.carroUm {
-    animation-delay: 2s;
+    animation-delay: 4s;
   }
   div.fundo img.carroDois {
-    animation-delay: 4s;
+    animation-delay: 8s;
   }
   @keyframes carroMexendo {
     0% {
@@ -278,15 +278,15 @@ div.fundo img.vagnao {
     }
   }
   div.fundo img.widnei {
-    max-width: 350px;
-    left: 10%;
+    max-width: 250px;
+    left: 20%;
   }
   div.fundo img.veneto {
-    max-width: 350px;
-    left: 45%;
+    max-width: 250px;
+    left: 55%;
   }
   div.fundo img.vagnao {
-    max-width: 350px;
-    left: -20%;
+    max-width: 250px;
+    left: -15%;
   }
 }
