@@ -40,18 +40,21 @@ div.quadro {
 div.quadro h3 {
   font-family: 'markProRegular';
   font-size: 15px;
+  font-weight: normal;
   letter-spacing: 10px;
   color: #24262D;
 }
 div.quadro h2 {
   font-family: 'markProBold';
   font-size: 25px;
+  font-weight: normal;
   color: #24262D;
   text-align: center;
 }
 div.quadro p {
   font-family: 'markProRegular';
   font-size: 18px;
+  font-weight: normal;
   color: #FE1F2D;
   width: 100%;
   max-width: 350px;
@@ -64,6 +67,7 @@ div.quadro p span {
 div.quadro h4 {
   font-family: 'markProBold';
   font-size: 18px;
+  font-weight: normal;
   color: #18AF78;
   border-bottom: 3px solid #18AF78;
   margin: 0 0 20px 0;
@@ -74,6 +78,7 @@ div.quadro form {
 div.quadro label {
   font-family: 'markProBold';
   font-size: 14px;
+  font-weight: normal;
   width: 100%;
 }
 div.quadro div.campo {
@@ -91,6 +96,7 @@ div.quadro div.campo img {
 div.quadro input {
   font-family: 'markProRegular';
   font-size: 16px;
+  font-weight: normal;
   color: #24262D;
   background-color: #E7E9F5;
   padding: 20px 20px 20px 50px;
@@ -112,6 +118,7 @@ div.quadro input.botao::placeholder,
 div.quadro input.botao:focus {
   font-family: 'markProBold';
   font-size: 18px;
+  font-weight: normal;
   color: #FFFFFF;
   background-color: #18AF78;
   width: 100%;
