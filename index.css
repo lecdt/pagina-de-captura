@@ -122,9 +122,10 @@ div.quadro input.botao:focus {
   color: #FFFFFF;
   background-color: #18AF78;
   width: 100%;
-  padding: 20px;
+  padding: 20px !important;
   border-radius: 10px;
   border: none;
+  outline: none;
   opacity: 1;
   transition: all 0.3s;
 }
